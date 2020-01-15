@@ -1,26 +1,28 @@
 from sys import exit
-print('***Kayıt Sistemi***')
-hesap = input('Kayıt Olmak İçin Kullanıcı Adınızı Girin:')
-print('Kullanıcı Adınız Başarı ile', hesap, 'olarak kaydedildi.')
-sifre = input('Şifrenizi Girin:')
-print('Şifreniz Başarı İle Kaydedildi')
-print('***Giriş Yapma Sistemi***')
-hesap_g = input('Kullanıcı Adı:')
+print('***Register System***')
+hesap = input('Type User Name:')
+print('Username succesfuly saved as', hesap)
+sifre = input('Type Password:')
+print('Password succesfuly saved.')
+print('')
+print('')
+print('***Login System***')
+hesap_g = input('Username:')
 
 if hesap_g == hesap:
-    sifre_g = input('Şifre:')
+    sifre_g = input('Password:')
 
     if sifre_g == sifre:
-            print(hesap, 'Olarak Oturum Açtınız')
+            print("You've been logged as", hesap)
             print('************', hesap, '************') 
 
 
     else:
-            print('Şifre hatalı.Lütfen tekrar deneyiniz.')
+            print('Password is wrong. Try again later.')
             
             
             
             
 
 else:
-      print('Kullanıcı Adı Bulunamadı.')
+      print('Username not found.')
