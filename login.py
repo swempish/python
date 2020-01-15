@@ -15,14 +15,7 @@ if hesap_g == hesap:
     if sifre_g == sifre:
             print("You've been logged as", hesap)
             print('************', hesap, '************') 
-
-
     else:
             print('Password is wrong. Try again later.')
-            
-            
-            
-            
-
 else:
       print('Username not found.')
